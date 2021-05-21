@@ -1,0 +1,55 @@
+.center{
+    max-width: 75%;
+    margin: auto;
+}
+
+#image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#link{
+  text-align: center;
+}
+
+body{
+  background-color: rgb(105, 124, 124);
+  font-family: "Copperplate", "Courier New", Fantasy;
+  color: #201c1c;
+}
+
+.mainDiv{
+  border: 2px;
+  border-style: solid;
+}
+
+h1{
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 3%;
+  
+}
+
+.question{
+  border: 2px;
+  border-style: solid;
+  box-shadow: 1px 2px #201c1c;
+  margin: 2%;
+}
+
+#formDiv{
+  margin-bottom: 2%;
+}
+
+button{
+  margin-left: 2%;
+}
+
+.questionInfo{
+  margin-left: 2%;
+}
+
+.lastQuestionInfo{
+  margin-bottom: 2%;
+}

@@ -2,10 +2,105 @@
 <html>
 <head>
   <title> Sondage à propos du site YouTube </title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1  id="title">Sondage à propos du site YouTube</h1>
-    <a href="https://www.youtube.com/"></a>
+    <div class="mainDiv">
+        <div class="center">
+            <h1 id="title" id="title">Sondage à propos du site YouTube</h1>
+        </div>
+        <div class="center">
+            <a href="https://www.youtube.com/"><img width="768" height="366" id="image" src="youtube_page.PNG" alt="YouTube main page"></a>
+            <a  href="https://www.youtube.com/"><p id="link">youtube.com</p></a>
+        </div>
+        <div class="center" id="formDiv">
+            <form>
+                <div class="question">
+                    <div class="questionInfo">
+                        <h3>Information personelle</h3>
+                    </div>
+                    <div class="questionInfo lastQuestionInfo">
+                        <label for="textQuestion">Enter votre nom complet: </label>
+                        <input type="text" id="textQuestion">
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="questionInfo">
+                        <h3>Avez-vous déjà visité cette page?</h3>
+                    </div>
+                    <div class="questionInfo">
+                        <label for="radioQuestionOui1">Oui</label>
+                        <input type="radio" name="pageVisiter" id="radioQuestionOui1">
+                    </div>
+                    <div class="questionInfo lastQuestionInfo">
+                        <label for="radioQuestionNon1">Non</label>
+                        <input type="radio" name="pageVisiter" id="radioQuestionNon1">
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="questionInfo">
+                        <h3>Reponder aux deux prochaines questions seulement si vous avez répondu oui a la question ci-haut</h3>
+                    </div>
+                    <div class="questionInfo">
+                        <label for="satisfaction">Sur une échelle de 1 à 5 (1 -> très insatisfait et 5 -> très satisfait) quel est votre niveau de satisfaction envers ce site web?</label>
+                        <select name="satisfaction" id="satisfaction">
+                            <option value="NA">NA</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="questionInfo lastQuestionInfo">
+                        <div>
+                            <label>Est-ce que vous avez trouvé cette page facile à utiliser?</label>
+                            <label for="radioQuestionOui2">Oui</label>
+                            <input type="radio" name="pageFacile" id="radioQuestionOui2">
+                            <label for="radioQuestionNon2">Non</label>
+                            <input type="radio" name="pageFacile" id="radioQuestionNon2">
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div>
+                        <div class="questionInfo">
+                            <h3> Si on vous donnerait la tache de modifier les couleurs du site web quelles couleurs choisirez-vous? (Vous pouvez choisir autant de couleurs que vous voulez)</h3>
+                        </div>
+                        <div class="questionInfo lastQuestionInfo">
+                            <label for="rouge">rouge: </label>
+                            <input type="checkbox" name="rouge" id="rouge" >
+                            <label for="vert">vert: </label>
+                            <input type="checkbox" name="vert" id="vert" >
+                            <label for="bleu">bleu: </label>
+                            <input type="checkbox" name="bleu" id="bleu" >
+                            <label for="noir">noir: </label>
+                            <input type="checkbox" name="noir" id="noir" >
+                            <label for="blanc">blanc: </label>
+                            <input type="checkbox" name="blanc" id="blanc" >
+                            <label for="orange">orange: </label>
+                            <input type="checkbox" name="orange" id="orange" >
+                            <label for="gris">gris: </label>
+                            <input type="checkbox" name="gris" id="gris" >
+                            <label for="violet">violet: </label>
+                            <input type="checkbox" name="violet" id="violet" >
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="questionInfo">
+                        <h3 >S'il vous plait, étriver tout commentaire que vous voulez nous faire parvenir à propos de la page.</h3>
+                    </div>
+                    <div class="questionInfo lastQuestionInfo">
+                        <textarea name="commentaire" id="commentaire" rows="6" cols="50"></textarea>
+                    </div>
+                </div>
+                <div id="buttonDiv">
+                    <button type="submit">submit</button>
+                    <button type="reset">reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

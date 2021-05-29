@@ -31,9 +31,16 @@
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
   border: 1px solid #ccc;
-  border-top: none;
+}
+
+/* Style to center everything*/
+.center{
+  margin: auto;
+  width: 80%;
 }
 
 /*The style for this footer was taken from https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/ with some modification added*/

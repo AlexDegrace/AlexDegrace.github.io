@@ -126,7 +126,7 @@ var productsInCart = {
 	"almond" : 0,
 	"milk" : 0,
 	"salmon" : 0,
-	"chiken nuget" : 0,
+	"chicken nugget" : 0,
 };
 
 
@@ -154,7 +154,7 @@ function getTotalPrice() {
 
 	}
 	//round to two decimal place
-	totalPrice = totalPrice.toFixed(2);
+	//totalPrice = totalPrice.toFixed(2);
 	return totalPrice;
 }
 
@@ -185,7 +185,7 @@ function clearCart(){
 		"almond" : 0,
 		"milk" : 0,
 		"salmon" : 0,
-		"chiken nuget" : 0,
+		"chicken nugget" : 0,
 	};
 	populateListProductChoices();
 	selectedItems();

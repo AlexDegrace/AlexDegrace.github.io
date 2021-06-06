@@ -1,0 +1,265 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none; 
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+/*.tab button:hover {
+  background-color: #ddd;
+}*/
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style to center everything*/
+.center{
+  margin: auto;
+  width: 80%;
+}
+
+/*The style for this footer was taken from https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/ with some modification added*/
+#footer {
+  position:absolute;
+  bottom:0;
+  right: 0;
+  padding-top: 10px;
+  width:100%;
+  height: 25px;   /* Height of the footer */
+  background:rgb(81, 84, 85);
+  text-align: center;
+  color: #f1f1f1;
+}
+
+/*This style the button to add element */
+#addCart {
+  background-color: #ccc; 
+  display: inline-block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: center;
+  border-color: #a79d9d;
+  margin-top: 6px;
+}
+
+#organicDev{
+  margin-top: 20px;
+}
+
+body{
+  font-family: Georgia, serif;
+  font-size: medium;
+}
+
+/*The part below was taken from https://stackoverflow.com/questions/7642277/css-styled-a-checkbox-to-look-like-a-button-is-there-a-hover */
+
+.checkButton {
+  margin:4px;
+  background-color:#EFEFEF;
+  border-radius:4px;
+  border:1px solid #D0D0D0;
+  overflow:auto;
+  float:left;
+}
+
+.checkButton:active {
+  background-color:#999999;
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+.checkButton:hover {
+  background-color:#999999;
+  box-shadow: 1px 2px #201c1c;
+}
+
+
+.checkButton label {
+  float:left;
+  width:auto;
+  font-size: 1.5rem;
+}
+
+.checkButton label span {
+  text-align:center;
+  padding: 20px;
+  display:block;
+}
+
+.checkButton label input {
+  position:absolute;
+  top:-20px;
+}
+
+.checkButton input:checked + span {
+  background-color: #464444;
+  color:#fff;
+}
+
+/*The part above was taken from https://stackoverflow.com/questions/7642277/css-styled-a-checkbox-to-look-like-a-button-is-there-a-hover*/
+
+/*Grid template found at https://www.w3schools.com/css/css_grid.asp */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+#clientInfo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+#productButtonDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Button design found at https://www.w3schools.com/css/css3_buttons.asp */
+.navButton{
+  
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2%;
+}
+
+.navButton:hover{
+  box-shadow: 1px 2px #201c1c;
+}
+
+.greenButton{
+  background-color: #4CAF50;
+}
+
+.greenButton:hover{
+  background-color: #316633;
+}
+
+.redButton{
+  background-color: #af4c4c;
+}
+
+.redButton:hover{
+  background-color: #663131;
+}
+
+.buttonRight{
+  float: right;
+}
+
+#clientInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#category{
+  padding-left: 5%
+}
+
+/* This part is also creating also changing the look of the checkbox to look like a button*/
+
+.productCheckbox {
+  margin:4px;
+  background-color:#EFEFEF;
+  border-radius:4px;
+  border:1px solid #D0D0D0;
+  overflow:auto;
+  float:left;
+}
+
+.productCheckbox{
+  font-size: large;
+}
+
+.productCheckbox:hover {
+  background-color:#999999;
+  box-shadow: 1px 2px #201c1c;
+}
+
+.productCheckbox:active{
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+.productCheckbox label {
+  float:left;
+  width:auto;
+  font-size: 0.5rem;
+}
+
+.productCheckbox label span {
+  text-align:center;
+  padding: 10px;
+  display:block;
+}
+
+.productCheckbox label input {
+  position:absolute;
+  top:-20px;
+}
+
+.productCheckbox input:checked + span {
+  background-color: #464444;
+  color:#fff;
+}
+
+#other{
+  margin-bottom: 5%;
+}
+
+#clearCart{
+  background-color: #af4c4c;
+  color: white;
+  float: right;
+}
+
+#clearCart:hover{
+  background-color: #663131;
+}
+
+.selectedItem{
+  font-size:medium !important;
+}

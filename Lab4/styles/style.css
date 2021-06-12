@@ -10,6 +10,9 @@
 
 .section{
   margin-top: 20px;
+  box-shadow: 5px 5px 5px 5px  #e2dada;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 .navRight{

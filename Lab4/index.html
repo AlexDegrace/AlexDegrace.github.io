@@ -1,27 +1,324 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Import for bootstrap was taken from https://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
-  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
   
-  <title></title>
+  <title>Home Pets Veterinary</title>
 </head>
 
 <body>
 
+  <div class="container-fluid" id="header">
+    <nav class="navbar navbar-default" >
+        <img id="logo" src="asset/logo_trans.png" alt="Logo" width="200" height="121">
+          <h1 id="title" class="center">Home Pets Veterinary</h1>
+          <br>
+          <Address class="navRight">
+            <b>Contact Information:</b><br>
+            (506) 854-8282<br>
+            Open 7:15am-8pm (Monday to Friday)<br>
+            140 Prom. Canaan Dr. Dieppe, NB
+          </Address>
+    </nav>
+  </div>
+
+  
+  <div id="content">
+
+    <div class="alert alert-success alert-dismissible collapse" id="successAlert">
+        <strong>Appointment book successfully!</strong>
+    </div>
+  
+    <div class="card section">
+      <div class="card-header">
+        <h3>Our Services</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+  
+          <div class="card service col-sm">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-sm">
+                  <h6>Pre-purchase examinations</h6>
+                </div>
+                <div class="col-sm text-end">
+                  <button class="btn btn-outline-primary" onclick="goToBooking(1)">Book Session</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  Price: 60$
+                </div>
+                <div class="col-8">
+                  Approximate time: 15min
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card service col-sm">
+            <div class="card-header">  
+              <div class="row">
+                <div class="col-sm">
+                  <h6>Parasite control treatments</h6>
+                </div>
+                <div class="col-sm text-end">
+                  <button class="btn btn-outline-primary" onclick="goToBooking(2)">Book Session</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  Price: 150$
+                </div>
+                <div class="col-8">
+                  Approximate time: 45min
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card service col-sm">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-sm">
+                  <h6>Examination of teeth</h6>
+                </div>
+                <div class="col-sm text-end">
+                  <button class="btn btn-outline-primary" onclick="goToBooking(3)">Book Session</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  Price: 60$
+                </div>
+                <div class="col-8">
+                  Approximate time: 20min
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="row">
+  
+          <div class="card service col-sm">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-sm">
+                  <h6>Reproductive examinations</h6>
+                </div>
+                <div class="col-sm text-end">
+                  <button class="btn btn-outline-primary" onclick="goToBooking(4)">Book Session</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  Price: 120$
+                </div>
+                <div class="col-8">
+                  Approximate time: 20min
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card service col-sm">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-sm">
+                  <h6>Pregnancy examinations</h6>
+                </div>
+                <div class="col-sm text-end">
+                  <button class="btn btn-outline-primary" onclick="goToBooking(5)">Book Session</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  Price: 80$
+                </div>
+                <div class="col-8">
+                  Approximate time: 20min
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card service col-sm">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-sm">
+                  <h6>Artificial insemination</h6>
+                </div>
+                <div class="col-sm text-end">
+                  <button class="btn btn-outline-primary" onclick="goToBooking(6)">Book Session</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  Price: 240$
+                </div>
+                <div class="col-8">
+                  Approximate time: 1h
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>   
+      </div>
+    </div>
+  
+    <div class="card section">
+      <div class="card-header">
+        <h3>Our Experts</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+  
+          <div class="card service col-sm">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-sm">
+                  <h6>James Power (Veterinarian)</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              I graduated in 2004 and joined the clinic in 2003. My favourite thing about the clinic is the way the staff works together as a team to provide fantastic care to our patients. What I love most about my job is helping with the well-being of our clients' animals. A fun fact about me is that I raise Morgan horses, have beef cattle, llamas, cats, and dogs. My first pet was Trixie, a pony.
+            </div>
+          </div>
+
+          <div class="card service col-sm">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-sm">
+                  <h6>Samuel Bilodeau (Registered Veterinary Technician)</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              From a young age, I always knew I wanted to work with animals. After graduating from Oulton College in 2010 I began working in a small veterinary practice in Sackville, NB. In 2013 I took a job working at an emergency and critical care veterinary hospital in Moncton, NB, then in 2017 I began working at MRAH. The best thing about MRAH is the staff, and how well we all work as a team, and how each team member treats each patient like their own family.
+            </div>
+          </div>
+  
+        </div>   
+
+        <div class="row">
+
+          <div class="card service col-sm">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-sm">
+                  <h6>Marc Savoie (Associate Veterinarian)</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              I enjoy helping clients provide care for their pets. I graduated from the Atlantic Veterinary College on PEI in 2013. I joined the Mountain Road Animal Hospital team in May of 2016. The aspects of veterinary medicine that interest me the most are working senior pets, preventative care and dentistry. My first pet was a cairn terrier named Muffin. What I love most about my job is helping people provide the best care they can for their pets. My favourite thing about the clinic is that we have a very caring and passionate team. A fun fact about me is that I love the ocean!
+            </div>
+          </div>
+
+          <div class="card service col-sm">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-sm">
+                  <h6>Samira Saade (Registered Veterinary Technician)</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              I have always known that I wanted to work in veterinary medicine. I worked for a short while as an assistant in the Fredericton area but wanted to do more. I went to school at Oulton College for the veterinary technician program and graduated in 2014. I then moved to Newfoundland for 5 years, then in May 2019 moved back to New Brunswick and started here.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  
+    <div class="card section">
+      <div class="card-header">
+        <h3>Book an appointment</h3>
+      </div>
+      <div class="card-body">
+        <form id="form">
+  
+          <div class="row">
+            <div class="col">
+              <label for="selectService" class="form-label">Service:</label>
+              <select type="text" id="selectService" class="form-control">
+                <option value="1">Pre-purchase examinations</option>
+                <option value="2">Parasite control treatments</option>
+                <option value="3">Examination of teeth</option>
+                <option value="4">Reproductive examinations</option>
+                <option value="5">Pregnancy examinations</option>
+                <option value="6">Artificial insemination</option>
+              </select>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col">
+              <label for="firstName" class="form-label">First Name:</label>
+              <input type="text" id="firstName" class="form-control">
+            </div>
+  
+            <div class="col">
+              <label for="lastName" class="form-label">Last Name:</label>
+              <input type="text" id="lastName" class="form-control">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col">
+              <label for="email" class="form-label">Email:</label>
+              <input type="text" id="email" class="form-control">
+            </div>
+  
+            <div class="col">
+              <label for="phone" class="form-label">Phone:</label>
+              <input type="text" id="phone" class="form-control">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <!-- Le date and time picker a ete prit de https://www.w3schools.com/tags/att_input_type_datetime-local.asp -->
+              <label for="date" class="form-label">Select a date and a time:</label>
+              <input type="datetime-local" id="date" name="date" class="form-control">
+            </div>
+          </div>
+  
+          <div class="row" id="buttonDiv">
+            <div class="col-12"></div>
+              <button type="button" form="form" id="submitButton" class="btn btn-success text-center center" onclick="submitForm()">Book</button>
+            </div>
+          </div>
+  
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
 
 </body>
 
-<div class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <img src="\asset\logo.jpg" alt="Logo">
-    </div>
-  </nav>
-</div>
+
 
 <footer id="footer">
     <p>Author: Alex DeGrace</p>

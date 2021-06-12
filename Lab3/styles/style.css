@@ -216,7 +216,8 @@ body{
 
 .productCheckbox:hover {
   background-color:#999999;
-  box-shadow: 1px 2px #201c1c;
+  box-shadow: 5px 5px 4px 5px #888888;
+
 }
 
 .productCheckbox:active{

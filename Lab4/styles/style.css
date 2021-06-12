@@ -4,14 +4,65 @@
   width: 80%;
 }
 
+#title{
+  font-family: "Verdana"
+}
+
+.section{
+  margin-top: 20px;
+}
+
+.navRight{
+  position: absolute;
+  right: 0px;
+  width: 320px
+}
+
+.buttonRight{
+  position: relative;
+  right: 0px;
+}
+
+#logo{
+  margin: 10px;
+}
+
+#buttonDiv{
+  padding: 10px;
+}
+
+#submitButton{
+  width: 60%;
+}
+
+.service{
+  margin: 5px;
+  padding: 0 !important;
+}
+
+#header{
+  box-shadow: 5px 5px 4px 5px #d4d4d4;
+  width: 100% !important;
+  background-color: #dfdfdf93;
+}
+
+#content{
+  width: 75%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*The style for this footer was taken from https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/ with some modification added*/
 #footer {
-  position:absolute;
+  position:relative;
   bottom:0;
   right: 0;
   padding-top: 10px;
+  padding-bottom: 10px;
   width:100%;
-  height: 60px;   /* Height of the footer */
+  height: fit-content;   /* Height of the footer */
   background:rgb(81, 84, 85);
   text-align: center;
   color: #f1f1f1;

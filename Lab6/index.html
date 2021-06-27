@@ -4,6 +4,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
+  <link href="styles/jquery-ui.min.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/72392968ed.js" crossorigin="anonymous"></script>
   
   <title>Home Pets Veterinary</title>
 </head>
@@ -24,6 +26,20 @@
     </nav>
   </div>
 
+  <nav class="navbar navbar-dark bg-dark navbar-fixed-top" id="navbar">
+    <div class="row">
+      <div class="col">
+        <a class="navButton" id="serviceNavButton">Services</a>
+      </div>
+      <div class="col">
+        <a class="navButton" id="expertsNavButton">Experts</a>
+      </div>
+      <div class="col">
+        <a class="navButton" id="appointmentNavButton">Appointment</a>
+      </div>
+    </div>
+  </nav>
+
   
   <div id="content">
 
@@ -31,9 +47,9 @@
         <strong>Appointment book successfully!</strong>
     </div>
   
-    <div class="card section">
+    <div class="card section" >
       <div class="card-header" style="background-color: #7e7e7e;">
-        <h3>Our Services</h3>
+        <h3 id="services">Our Services  <i class="fas fa-briefcase-medical"></i></h3>
       </div>
       <div class="card-body">
         <div class="row">
@@ -182,9 +198,9 @@
       </div>
     </div>
   
-    <div class="card section">
+    <div class="card section" >
       <div class="card-header" style="background-color: #7e7e7e;">
-        <h3>Our Experts</h3>
+        <h3 id="experts">Our Experts  <i class="fas fa-user-friends"></i></h3>
       </div>
       <div class="card-body">
         <div class="row">
@@ -193,12 +209,18 @@
             <div class="card-header">
               <div class="row">
                 <div class="col-sm">
-                  <h6>James Power (Veterinarian)</h6>
+                  <h5>James Power (Veterinarian)</h5>
                 </div>
               </div>
             </div>
             <div class="card-body">
+              <h6>Description:</h6>
               I graduated in 2004 and joined the clinic in 2003. My favourite thing about the clinic is the way the staff works together as a team to provide fantastic care to our patients. What I love most about my job is helping with the well-being of our clients' animals. A fun fact about me is that I raise Morgan horses, have beef cattle, llamas, cats, and dogs. My first pet was Trixie, a pony.
+            </div>
+            <hr>
+            <div class="workingDay">
+              <h6>Working days:</h6>
+              Monday-Friday
             </div>
           </div>
 
@@ -206,12 +228,18 @@
             <div class="card-header">
               <div class="row">
                 <div class="col-sm">
-                  <h6>Samuel Bilodeau (Registered Veterinary Technician)</h6>
+                  <h5>Samuel Bilodeau (Registered Veterinary Technician)</h5>
                 </div>
               </div>
             </div>
             <div class="card-body">
+              <h6>Description:</h6>
               From a young age, I always knew I wanted to work with animals. After graduating from Oulton College in 2010 I began working in a small veterinary practice in Sackville, NB. In 2013 I took a job working at an emergency and critical care veterinary hospital in Moncton, NB, then in 2017 I began working at MRAH. The best thing about MRAH is the staff, and how well we all work as a team, and how each team member treats each patient like their own family.
+            </div>
+            <hr>
+            <div class="workingDay">
+              <h6>Working days:</h6>
+              Monday-Wednesday
             </div>
           </div>
   
@@ -223,12 +251,18 @@
             <div class="card-header">
               <div class="row">
                 <div class="col-sm">
-                  <h6>Marc Savoie (Associate Veterinarian)</h6>
+                  <h5>Marc Savoie (Associate Veterinarian)</h5>
                 </div>
               </div>
             </div>
             <div class="card-body">
+              <h6>Description:</h6>
               I enjoy helping clients provide care for their pets. I graduated from the Atlantic Veterinary College on PEI in 2013. I joined the Mountain Road Animal Hospital team in May of 2016. The aspects of veterinary medicine that interest me the most are working senior pets, preventative care and dentistry. My first pet was a cairn terrier named Muffin. What I love most about my job is helping people provide the best care they can for their pets. My favourite thing about the clinic is that we have a very caring and passionate team. A fun fact about me is that I love the ocean!
+            </div>
+            <hr>
+            <div class="workingDay">
+              <h6>Working days:</h6>
+              Friday-Sunday
             </div>
           </div>
 
@@ -236,73 +270,158 @@
             <div class="card-header">
               <div class="row">
                 <div class="col-sm">
-                  <h6>Samira Saade (Registered Veterinary Technician)</h6>
+                  <h5>Samira Saade (Registered Veterinary Technician)</h5>
                 </div>
               </div>
             </div>
             <div class="card-body">
+              <h6>Description:</h6>
               I have always known that I wanted to work in veterinary medicine. I worked for a short while as an assistant in the Fredericton area but wanted to do more. I went to school at Oulton College for the veterinary technician program and graduated in 2014. I then moved to Newfoundland for 5 years, then in May 2019 moved back to New Brunswick and started here.
             </div>
+            <hr>
+            <div class="workingDay">
+              <h6>Working days:</h6>
+              Tuesday-Saturday
+            </div>
           </div>
-
         </div>
-
       </div>
     </div>
   
-    <div class="card section">
+    <div class="card section" >
       <div class="card-header" style="background-color: #7e7e7e;">
-        <h3>Book an appointment</h3>
+        <h3 id="appointment">Book an appointment  <i class="fas fa-calendar-check"></i></h3>
       </div>
       <div class="card-body">
         <form id="form">
-  
-          <div class="row">
-            <div class="col">
-              <label for="selectService" class="form-label">Service:</label>
-              <select type="text" id="selectService" class="form-control">
-                <option value="1">Pre-purchase examinations</option>
-                <option value="2">Parasite control treatments</option>
-                <option value="3">Examination of teeth</option>
-                <option value="4">Reproductive examinations</option>
-                <option value="5">Pregnancy examinations</option>
-                <option value="6">Artificial insemination</option>
-              </select>
-            </div>
-          </div>
-  
-          <div class="row">
-            <div class="col">
-              <label for="firstName" class="form-label">First Name:</label>
-              <input type="text" id="firstName" class="form-control">
-            </div>
-  
-            <div class="col">
-              <label for="lastName" class="form-label">Last Name:</label>
-              <input type="text" id="lastName" class="form-control">
-            </div>
-          </div>
-  
-          <div class="row">
-            <div class="col">
-              <label for="email" class="form-label">Email:</label>
-              <input type="text" id="email" class="form-control">
-            </div>
-  
-            <div class="col">
-              <label for="phone" class="form-label">Phone:</label>
-              <input type="text" id="phone" class="form-control">
+          
+          <div class="formCategory" id="serviceInfo">
+            <h4>Appointment Information</h4>
+            <div class="row">
+              <div class="col">
+                <label for="selectService" class="form-label">Service:</label>
+                <select type="text" id="selectService" class="form-control">
+                  <option value="1">Pre-purchase examinations</option>
+                  <option value="2">Parasite control treatments</option>
+                  <option value="3">Examination of teeth</option>
+                  <option value="4">Reproductive examinations</option>
+                  <option value="5">Pregnancy examinations</option>
+                  <option value="6">Artificial insemination</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="selectExpert" class="form-label">Expert:</label>
+                <select type="text" id="selectExpert" class="form-control">
+                  <option value="1">James Power</option>
+                  <option value="2">Samuel Bilodeau</option>
+                  <option value="3">Marc Savoie</option>
+                  <option value="4">Samira Saade</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <!-- Le date and time picker a ete prit de https://www.w3schools.com/tags/att_input_type_datetime-local.asp -->
+                <label for="date" class="form-label">Select a date and a time:</label>
+                <input type="text" id="datepicker" name="date" class="form-control">
+              </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col">
-              <!-- Le date and time picker a ete prit de https://www.w3schools.com/tags/att_input_type_datetime-local.asp -->
-              <label for="date" class="form-label">Select a date and a time:</label>
-              <input type="datetime-local" id="date" name="date" class="form-control">
+          <div class="formCategory" id="personalInfo">
+            <h4>Personal Information</h4>
+            <div class="row">
+              <div class="col">
+                <label for="firstName" class="form-label">First name:</label>
+                <input type="text" id="firstName" class="form-control">
+                <h6 class="errorMessage" id="firstNameError">First name must only contain letter</h6>
+              </div>
+    
+              <div class="col">
+                <label for="lastName" class="form-label">Last name:</label>
+                <input type="text" id="lastName" class="form-control">
+                <h6 class="errorMessage" id="lastNameError">Last name must only contain letter</h6>
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="col">
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" id="email" class="form-control">
+                <h6 class="errorMessage" id="emailError">The email must be in an email format like this one: example@mail.com</h6>
+              </div>
+    
+              <div class="col">
+                <label for="phone" class="form-label">Phone:</label>
+                <input type="text" id="phone" class="form-control">
+                <h6 class="errorMessage" id="phoneError">Phone should follow this format xxx xxx-xxxx where x are digits</h6>
+              </div>
             </div>
           </div>
-  
+
+          <div class="formCategory" id="creditCard">
+            <h4>Credit Card Information</h4>
+            <div class="row">
+              <div class="col">
+                <label for="cardNumber" class="form-label">Card number:</label>
+                <input type="text" id="cardNumber" class="form-control">
+                <h6 class="errorMessage" id="cardNumberError">Card number must be 16 digits and only numbers</h6>
+              </div>
+
+              <div class="col">
+                <label for="nameCard" class="form-label">Name on card:</label>
+                <input type="text" id="nameCard" class="form-control">
+                <h6 class="errorMessage" id="nameCardError">Name on card can only be letters</h6>
+              </div>
+            
+              <div class="col">
+                <label for="expirationMonth" class="form-label">Expiration month:</label>
+                <select type="text" id="expirationMonth" class="form-control">
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="expirationYear" class="form-label">Expiration year:</label>
+                <select type="text" id="expirationMonth" class="form-control">
+                  <option value="21">2021</option>
+                  <option value="22">2022</option>
+                  <option value="23">2023</option>
+                  <option value="24">2024</option>
+                  <option value="25">2025</option>
+                  <option value="26">2026</option>
+                  <option value="27">2027</option>
+                  <option value="28">2028</option>
+                  <option value="29">2029</option>
+                  <option value="30">2030</option>
+                  <option value="31">2031</option>
+                  <option value="32">2032</option>
+                  <option value="33">2033</option>
+                  <option value="34">2034</option>
+                  <option value="35">2035</option>
+                  <option value="36">2036</option>
+                  <option value="37">2037</option>
+                  <option value="38">2038</option>
+                  <option value="39">2039</option>
+                  <option value="40">2040</option>
+                  <option value="41">2041</option>
+                </select>
+            </div>
+          </div>
+        </div>
+      </div>
+          
           <div class="row" id="buttonDiv">
             <div class="col-12"></div>
               <button type="button" form="form" id="submitButton" class="btn btn-success text-center center" onclick="submitForm()">Book</button>
@@ -315,6 +434,11 @@
   </div>
 
   <script src="scripts/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/jqueryfunction.js"></script>
+  <script src="scripts/jquery-ui.min.js"></script>
+  <script src="https://rawgithub.com/trentrichardson/jQuery-Timepicker-Addon/master/jquery-ui-timepicker-addon.js"></script>
+  <script src="https://rawgithub.com/trentrichardson/jQuery-Timepicker-Addon/master/jquery-ui-sliderAccess.js"></script>
 
 </body>
 

@@ -44,7 +44,7 @@
 }
 
 #header{
-  box-shadow: 5px 5px 4px 5px #d4d4d4;
+  box-shadow: 3px 5px 10px 4px #00000062;
   width: 100% !important;
   background-color: #dfdfdf93;
 }
@@ -71,3 +71,57 @@
   color: #f1f1f1;
 }
 
+.formCategory{
+  border-style: solid;
+  border-color: #888888;
+  border-width: 1px;
+  margin-top: 2%;
+  padding: 2%;
+}
+
+#navbar{
+  display: none;
+  position: fixed;
+  width: 100% !important;
+  top: 0;
+  z-index: 1;
+  background-color: #dfdfdf !important;
+  box-shadow: 3px 5px 10px 4px #00000062;
+}
+
+.navButton{
+  margin-right: 2%;
+  margin-left:33%;
+  font-size: xx-large ; 
+  
+}
+
+.errorMessage{
+  color: red;
+  margin-top: 2%;
+  margin-bottom: 0px o !important;
+}
+
+#cardNumberError,#nameCardError,#firstNameError,#lastNameError,#phoneError,#emailError{
+  display: none;
+}
+
+.workingDay{
+  padding-left: 2%;
+  padding-bottom: 2%;
+}
+
+a,a:link, a:visited{
+  color: black;
+  text-decoration: none;
+
+}
+
+a:hover{
+  color: #4d659c;
+  text-decoration: underline;
+}
+
+#successAlert{
+  margin-bottom: -2%;
+}
